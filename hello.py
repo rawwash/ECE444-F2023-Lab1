@@ -3,7 +3,7 @@ from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from datetime import datetime
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from wtforms import StringField, SubmitField, EmailField
 from wtforms.validators import DataRequired, Email
 
 app = Flask(__name__)
@@ -13,7 +13,7 @@ moment = Moment(app)
 
 class NameForm(FlaskForm):
     name = StringField('What is your name?', validators=[DataRequired()])
-    email = StringField('What is your UofT Email address?', validators=[DataRequired(), Email()])
+    email = EmailField('What is your UofT Email address?', validators=[DataRequired(), Email()])
     submit = SubmitField('Submit')
 
 @app.errorhandler(404)
