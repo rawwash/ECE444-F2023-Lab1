@@ -3,3 +3,7 @@
 ## Activity 2
 
 ![Alt text](/screenshots/activity2.png?raw=true "Activity 2")
+
+## Activity 3
+
+![Alt text](/screenshots/activity3.png?raw=true "Activity 3")
